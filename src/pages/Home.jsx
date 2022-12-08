@@ -1,12 +1,13 @@
+import "../styles/Home.css";
+import Header from "../components/Header";
 
-import '../styles/Home.css';
-
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="Home">
+      <Header />
       <h1>Home</h1>
     </div>
   );
 }
 
-export default App;
+export default Home;
