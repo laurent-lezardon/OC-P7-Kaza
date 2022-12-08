@@ -1,12 +1,12 @@
 import React from "react";
-import { ReactComponent as Logo } from "../assets/images/logo_Kaza.svg";
+import { ReactComponent as Logo } from "../assets/images/logo-header.svg";
 import Navigation from "./Navigation";
 import "../styles/Header.css";
 
 const Header = () => {
   return (
     <header>
-      <Logo />
+      <Logo className="header-logo" />
       <Navigation />
     </header>
   );

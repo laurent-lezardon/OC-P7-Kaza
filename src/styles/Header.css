@@ -2,5 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  height: 150px;
+}
+
+.header-logo {
+  height: 69px;
 }

@@ -5,13 +5,12 @@ import "../styles/Navigation.css";
 const Navigation = () => {
   return (
     <nav>
-      <Link
-        className="nav-link,{nav => nav.isActive && nav-link-active} "
-        to="/"
-      >
+      <Link className="nav-link" to="/">
         Accueil
       </Link>
-      <Link to="/a-propos">A Propos</Link>
+      <Link className="nav-link" to="/a-propos">
+        A Propos
+      </Link>
     </nav>
   );
 };
