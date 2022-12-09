@@ -1,8 +1,12 @@
 .footer-logo {
   background-color: black;
+  padding: 60px 0 36px 0;
 }
 
 footer {
   background-color: black;
   text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 6px 0;
 }

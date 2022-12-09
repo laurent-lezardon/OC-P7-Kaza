@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <Logo className="footer-logo" />
+      <p>&#169; 2020 Kasa. All rights reserved</p>
     </footer>
   );
 };

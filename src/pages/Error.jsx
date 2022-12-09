@@ -1,11 +1,19 @@
-import React from 'react';
+import React from "react";
+import "../styles/Error.css";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
 const Error = () => {
-    return (
-        <div>
-            <h1>Error 404</h1>
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+      <div className="error">
+        <h1>404</h1>
+        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <Link to="/">Retourner sur la page d'accueil</Link>
+      </div>
+    </div>
+  );
 };
 
 export default Error;
