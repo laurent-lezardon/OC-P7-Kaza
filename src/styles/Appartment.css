@@ -1,0 +1,30 @@
+.appartment-presentation {
+  display: flex;
+}
+.disk {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f66060;
+}
+
+.appartment-tag {
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+}
+
+.appartment-tag li {
+  background-color: #f66060;
+  padding: 5px 25px;
+  margin-right: 10px;
+
+  border-radius: 5px;
+}
+
+.appartment-adds {
+  display: flex;
+  flex-direction: column;
+}

@@ -6,14 +6,20 @@ import "../styles/Collapse.css";
 const Collapse = ({ title, content }) => {
   const [visible, setVisible] = useState(true);
   return (
-    <div>
+    <div className="collapse-container">
       <div className="collapse" onClick={() => setVisible(!visible)}>
         <span>{title}</span>
         <Vector className="vector" />
       </div>
-      <ul className={!visible && "hidden-ul"}>
-        {<li className="li-collapse">{content}</li>}
-      </ul>
+      {visible && (
+        <ul>
+          {content.map((cont, key) => (
+            <li key={`content-${key}`} className="collapse-li">
+              {cont}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

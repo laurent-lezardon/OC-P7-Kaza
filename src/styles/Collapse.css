@@ -1,3 +1,7 @@
+.collapse-container {
+  width: 100%;
+}
+
 .collapse {
   display: flex;
   height: 47px;
@@ -9,11 +13,13 @@
   background-color: #f66060;
   font-size: 24px;
   padding: 0 17px;
+  margin-top: 31px;
 }
 
-.hidden-ul {
-  visibility: hidden;
-}
 .vector {
   height: 24px;
+}
+
+.collapse-li {
+  padding: 0 17px;
 }
