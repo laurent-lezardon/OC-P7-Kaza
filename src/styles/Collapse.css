@@ -1,0 +1,19 @@
+.collapse {
+  display: flex;
+  height: 47px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #f66060;
+  font-size: 24px;
+  padding: 0 17px;
+}
+
+.hidden-ul {
+  visibility: hidden;
+}
+.vector {
+  height: 24px;
+}

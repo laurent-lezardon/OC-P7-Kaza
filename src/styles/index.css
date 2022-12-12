@@ -9,4 +9,11 @@ body {
   font-family: Lato, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  color: #f66060;
+}
+
+ul {
+  list-style: none;
+  background-color: #f6f6f6;
 }
