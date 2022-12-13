@@ -1,12 +1,6 @@
 .appartment-presentation {
   display: flex;
-}
-.disk {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #f66060;
+  justify-content: space-between;
 }
 
 .appartment-tag {
@@ -27,4 +21,5 @@
 .appartment-adds {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }

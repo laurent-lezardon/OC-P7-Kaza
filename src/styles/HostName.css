@@ -1,0 +1,21 @@
+.appartment-hostname {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.disk {
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin-left: 10px;
+}
+.appartment-name {
+  text-align: right;
+  justify-self: end;
+}
+.appartment-name p {
+  font-size: 18px;
+}

@@ -3,11 +3,11 @@ import { ReactComponent as Logo } from "../assets/images/logo-header.svg";
 import Navigation from "./Navigation";
 import "../styles/Header.css";
 
-const Header = () => {
+const Header = ({ page }) => {
   return (
     <header>
-      <Logo className="header-logo" />
-      <Navigation />
+      <Logo />
+      <Navigation page={page} />
     </header>
   );
 };

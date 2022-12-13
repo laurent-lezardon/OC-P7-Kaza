@@ -21,7 +21,7 @@ const APropos = () => {
 
   return (
     <div>
-      <Header />
+      <Header page="a-propos" />
       <div className="banner-a-propos"></div>
       <div className="a-propos__collapse">
         <Collapse title="Fiabilité" content={fiabiliteText} />
