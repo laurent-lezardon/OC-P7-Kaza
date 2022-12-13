@@ -23,3 +23,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.twoCollapses {
+  display: flex;
+}
+
+.appartment-collapse {
+  font-size: 18px;
+  border-radius: 5px;
+  width: 50%;
+}

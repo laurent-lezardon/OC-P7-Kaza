@@ -3,13 +3,13 @@ import { ReactComponent as Vector } from "../assets/images/vector-collapse.svg";
 
 import "../styles/Collapse.css";
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ classname, title, content }) => {
   const [visible, setVisible] = useState(true);
   return (
-    <div className="collapse-container">
+    <div className={classname}>
       <div className="collapse" onClick={() => setVisible(!visible)}>
         <span>{title}</span>
-        <Vector className="vector" />
+        <Vector className={visible ? "vector" : "vector-up"} />
       </div>
       {visible && (
         <ul>

@@ -36,11 +36,18 @@ const Appartment = () => {
             <Stars rating={appartment.rating} />
           </div>
         </div>
-        <Collapse
-          title="Description"
-          content={appartment.description.split("@")}
-        />
-        <Collapse title="Equipements" content={appartment.equipments} />
+        <div className="twoCollapses">
+          <Collapse
+            classname="appartment-collapse"
+            title="Description"
+            content={Array.of(appartment.description)}
+          />
+          <Collapse
+            classname="appartment-collapse"
+            title="Equipements"
+            content={appartment.equipments}
+          />
+        </div>
 
         <Footer />
       </div>

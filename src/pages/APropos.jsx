@@ -24,10 +24,26 @@ const APropos = () => {
       <Header page="a-propos" />
       <div className="banner-a-propos"></div>
       <div className="a-propos__collapse">
-        <Collapse title="Fiabilité" content={fiabiliteText} />
-        <Collapse title="Respect" content={respectTxt} />
-        <Collapse title="Service" content={serviceTxt} />
-        <Collapse title="Sécurité" content={securiteTxt} />
+        <Collapse
+          classname="a-propos-collapse"
+          title="Fiabilité"
+          content={fiabiliteText}
+        />
+        <Collapse
+          classname="a-propos-collapse"
+          title="Respect"
+          content={respectTxt}
+        />
+        <Collapse
+          classname="a-propos-collapse"
+          title="Service"
+          content={serviceTxt}
+        />
+        <Collapse
+          classname="a-propos-collapse"
+          title="Sécurité"
+          content={securiteTxt}
+        />
       </div>
 
       <Footer />
