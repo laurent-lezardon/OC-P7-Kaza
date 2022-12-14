@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-  padding: 0 7%;
   font-family: Lato, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,10 +14,8 @@ body {
 
 ul {
   list-style: none;
-  background-color: #f6f6f6;
   margin: 0;
   padding: 0;
-  border-radius: 5px;
 }
 
 p,
@@ -26,6 +23,11 @@ h1 {
   margin: 0;
 }
 
-h1 {
-  font-size: 36px;
+a {
+  padding: 0;
+}
+
+.main-container {
+  padding: 0 7%;
+  overflow: hidden;
 }

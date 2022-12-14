@@ -7,13 +7,13 @@ const Navigation = ({ page }) => {
   return (
     <nav>
       <Link
-        className={page !== "home" ? "page-not-selected" : undefined}
+        className={page !== "home" ? "page-not-selected" : "nav-link"}
         to="/"
       >
         Accueil
       </Link>
       <Link
-        className={page !== "a-propos" ? "page-not-selected" : undefined}
+        className={page !== "a-propos" ? "page-not-selected" : "nav-link"}
         to="/a-propos"
       >
         A Propos

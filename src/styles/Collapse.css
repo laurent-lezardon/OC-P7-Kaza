@@ -8,7 +8,6 @@
   padding: 3px;
   background-color: #f66060;
   padding: 0 17px;
-  margin-top: 31px;
 }
 
 .vector {
@@ -16,10 +15,16 @@
   transition: 0.3s;
 }
 
+.collapse-ul {
+  padding: 31px 12px 31px 20px;
+  background-color: #f6f6f6;
+  /* border: solid 2px black; */
+  border-radius: inherit;
+}
 .collapse-li {
   padding: 0 17px;
 }
 .vector-up {
   transform: rotate(180deg);
-  transition: 0.3s;
+  transition: all ease-in-out 0.3s;
 }

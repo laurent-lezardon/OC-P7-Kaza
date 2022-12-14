@@ -8,11 +8,31 @@ const Stars = ({ rating }) => {
 
   return (
     <div>
-      {parseInt(rating) > 0 ? <FullStar className="star" /> : <EmptyStar />}
-      {parseInt(rating) > 1 ? <FullStar /> : <EmptyStar />}
-      {parseInt(rating) > 2 ? <FullStar /> : <EmptyStar />}
-      {parseInt(rating) > 3 ? <FullStar /> : <EmptyStar />}
-      {parseInt(rating) > 4 ? <FullStar /> : <EmptyStar />}
+      {parseInt(rating) > 0 ? (
+        <FullStar className="star" />
+      ) : (
+        <EmptyStar className="star" />
+      )}
+      {parseInt(rating) > 1 ? (
+        <FullStar className="star" />
+      ) : (
+        <EmptyStar className="star" />
+      )}
+      {parseInt(rating) > 2 ? (
+        <FullStar className="star" />
+      ) : (
+        <EmptyStar className="star" />
+      )}
+      {parseInt(rating) > 3 ? (
+        <FullStar className="star" />
+      ) : (
+        <EmptyStar className="star" />
+      )}
+      {parseInt(rating) > 4 ? (
+        <FullStar className="star" />
+      ) : (
+        <EmptyStar className="star" />
+      )}
     </div>
   );
 };

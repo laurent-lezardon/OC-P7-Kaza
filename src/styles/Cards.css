@@ -3,18 +3,22 @@
   display: flex;
   border-radius: 25px;
   background-color: #f6f6f6;
-  padding: 56px 6%;
+  padding: 56px 4%;
+  margin-bottom: 43px;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 340px;
-  width: 340px;
+
+  height: 21vw;
+  width: 21vw;
+  min-width: 250px;
+  min-height: 250px;
   font-size: 18px;
   color: white;
   border-radius: 10px;

@@ -9,10 +9,10 @@ const Collapse = ({ classname, title, content }) => {
     <div className={classname}>
       <div className="collapse" onClick={() => setVisible(!visible)}>
         <span>{title}</span>
-        <Vector className={visible ? "vector" : "vector-up"} />
+        <Vector className={visible ? "vector-up" : "vector"} />
       </div>
       {visible && (
-        <ul>
+        <ul className="collapse-ul">
           {content.map((cont, key) => (
             <li key={`content-${key}`} className="collapse-li">
               {cont}

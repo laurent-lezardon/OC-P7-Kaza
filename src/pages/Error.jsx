@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const Error = () => {
   return (
-    <div>
+    <div className="main-container">
       <Header />
       <div className="error">
         <h1 id="big-error">404</h1>

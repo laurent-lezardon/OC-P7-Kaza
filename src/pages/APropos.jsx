@@ -21,29 +21,31 @@ const APropos = () => {
 
   return (
     <div>
-      <Header page="a-propos" />
-      <div className="banner-a-propos"></div>
-      <div className="a-propos__collapse">
-        <Collapse
-          classname="a-propos-collapse"
-          title="Fiabilité"
-          content={fiabiliteText}
-        />
-        <Collapse
-          classname="a-propos-collapse"
-          title="Respect"
-          content={respectTxt}
-        />
-        <Collapse
-          classname="a-propos-collapse"
-          title="Service"
-          content={serviceTxt}
-        />
-        <Collapse
-          classname="a-propos-collapse"
-          title="Sécurité"
-          content={securiteTxt}
-        />
+      <div className="main-container">
+        <Header page="a-propos" />
+        <div className="banner-a-propos"></div>
+        <div className="a-propos__collapse">
+          <Collapse
+            classname="a-propos-collapse"
+            title="Fiabilité"
+            content={fiabiliteText}
+          />
+          <Collapse
+            classname="a-propos-collapse"
+            title="Respect"
+            content={respectTxt}
+          />
+          <Collapse
+            classname="a-propos-collapse"
+            title="Service"
+            content={serviceTxt}
+          />
+          <Collapse
+            classname="a-propos-collapse"
+            title="Sécurité"
+            content={securiteTxt}
+          />
+        </div>
       </div>
 
       <Footer />

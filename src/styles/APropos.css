@@ -19,7 +19,12 @@
   padding: 0 9%;
 }
 
+.a-propos__collapse:last-child {
+  margin-bottom: 201px;
+}
+
 .a-propos-collapse {
   font-size: 24px;
   border-radius: 10px;
+  margin-top: 31px;
 }

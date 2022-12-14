@@ -8,7 +8,7 @@ const Cards = () => {
   return (
     <ul className="cards">
       {Kasas.map((kaza) => (
-        <Link className="nav-link" to={`/appartment/${kaza.id}`}>
+        <Link to={`/appartment/${kaza.id}`}>
           <li className="card" key={`title${kaza.id}`}>
             <span>{kaza.title}</span>
           </li>
