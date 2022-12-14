@@ -30,3 +30,15 @@
   width: 47%;
   margin-top: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  .appartment-presentation {
+    display: block;
+  }
+  .twoCollapses {
+    display: block;
+  }
+  .appartment-collapse {
+    width: 100%;
+  }
+}

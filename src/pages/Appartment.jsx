@@ -10,15 +10,32 @@ import HostName from "../components/HostName";
 import "../styles/Appartment.css";
 import Tags from "../components/Tags";
 import Error from "../pages/Error";
+import Carousel from "../components/Carousel";
 
 const Appartment = () => {
   const appartmentId = useParams();
   const appartArray = Kasas.filter((k) => k.id === appartmentId.id);
   const appartment = appartArray[0];
+  console.log(appartment);
+  /**
+   *
+   * @param {*} appartment
+   * @returns
+   */
+  const coverIndex = (appartment) => {
+    return appartment.pictures.indexOf(appartment.cover);
+  };
+
+  // console.log(coverIndex(appartment));
   return appartArray.length === 1 ? (
     <div>
       <div className="main-container">
         <Header />
+        <Carousel
+          pictures={appartment.pictures}
+          cover="0"
+          alt={appartment.title}
+        />
         <div className="appartment-presentation">
           <div className="appartment-title">
             <h1>{appartment.title}</h1>
@@ -26,7 +43,10 @@ const Appartment = () => {
             <Tags tags={appartment.tags} />
           </div>
           <div className="appartment-adds">
-            <HostName name={appartment.host.name} />
+            <HostName
+              name={appartment.host.name}
+              picture={appartment.host.picture}
+            />
             <Stars rating={appartment.rating} />
           </div>
         </div>

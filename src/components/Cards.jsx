@@ -7,9 +7,9 @@ const Cards = () => {
   // console.log(Kasas.map((k) => k.host.name));
   return (
     <ul className="cards">
-      {Kasas.map((kaza) => (
+      {Kasas.map((kaza, index) => (
         <Link to={`/appartment/${kaza.id}`}>
-          <li className="card" key={`title${kaza.id}`}>
+          <li className="card" key={`title${index}`}>
             <span>{kaza.title}</span>
           </li>
         </Link>

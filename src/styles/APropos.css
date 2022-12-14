@@ -25,6 +25,12 @@
 
 .a-propos-collapse {
   font-size: 24px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 31px;
+}
+
+@media screen and (max-width: 768px) {
+  .a-propos__collapse {
+    padding: 0;
+  }
 }

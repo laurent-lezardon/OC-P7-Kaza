@@ -3,6 +3,11 @@ nav a {
   color: #ff6060;
   padding: 14px 28px;
   font-size: 24px;
+  transition: 0.3s all ease-in-out;
+}
+
+nav a:hover {
+  font-weight: bolder;
 }
 
 nav a:last-child {

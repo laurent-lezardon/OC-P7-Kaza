@@ -4,11 +4,10 @@
   justify-content: center;
   height: 223px;
   border-radius: 25px;
-  background-color: brown;
   padding: 0 5%;
   background-color: black;
-
   background: url("../assets/images/home-banner.jpg") right/cover;
+  margin-bottom: 43px;
 }
 
 .banner::after {

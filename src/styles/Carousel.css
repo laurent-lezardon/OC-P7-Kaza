@@ -1,0 +1,40 @@
+.carousel {
+  height: 415px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#left-arrow {
+  margin-left: 20px;
+  transform: translateY(-50%);
+}
+#right-arrow {
+  right: 0;
+  transform: rotate(180deg) translateY(+50%);
+  margin-right: 20px;
+}
+.carousel-span {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-image {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

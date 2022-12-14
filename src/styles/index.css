@@ -3,6 +3,9 @@
   src: url("../assets/fonts/Lato-Regular.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Lato, sans-serif;
@@ -30,4 +33,10 @@ a {
 .main-container {
   padding: 0 7%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 0 5.3%;
+  }
 }

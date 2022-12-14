@@ -1,6 +1,5 @@
 .footer-logo {
   background-color: black;
-  padding: 60px 0 36px 0;
 }
 
 footer {
@@ -8,6 +7,6 @@ footer {
   text-align: center;
   color: white;
   font-size: 24px;
-  padding: 6px 0;
+  padding: 30px 0;
   width: 100vw;
 }

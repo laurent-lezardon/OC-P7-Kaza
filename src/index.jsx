@@ -15,8 +15,8 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/appartment/:id" element={<Appartment />} />
-        <Route path="/error-page" element={<Error />} />
-        <Route path="/redirect" element={<Navigate to="/error-page" />} />
+        {/* <Route path="/error-page" element={<Error />} />
+        <Route path="/redirect" element={<Navigate to="/error-page" />} /> */}
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
