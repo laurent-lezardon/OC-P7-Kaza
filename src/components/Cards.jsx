@@ -8,8 +8,8 @@ const Cards = () => {
   return (
     <ul className="cards">
       {Kasas.map((kaza, index) => (
-        <Link to={`/appartment/${kaza.id}`}>
-          <li className="card" key={`title${index}`}>
+        <Link to={`/appartment/${kaza.id}`} key={kaza.id}>
+          <li className="card" key={kaza.id}>
             <span>{kaza.title}</span>
           </li>
         </Link>

@@ -1,7 +1,7 @@
 .appartment-hostname {
   display: flex;
   align-items: flex-start;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .disk {

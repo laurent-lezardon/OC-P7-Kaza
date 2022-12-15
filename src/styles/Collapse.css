@@ -5,9 +5,9 @@
   align-items: center;
   color: white;
   border-radius: inherit;
-  padding: 3px;
+  padding: 3px 1.7%;
   background-color: #f66060;
-  padding: 0 17px;
+
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -21,13 +21,12 @@
 }
 
 .collapse-ul {
-  padding: 31px 12px 31px 20px;
+  padding: 31px 1.7%;
   background-color: #f6f6f6;
-  /* border: solid 2px black; */
   border-radius: inherit;
 }
 .collapse-li {
-  padding: 0 17px;
+  font-weight: 400;
 }
 .vector-up {
   transform: rotate(180deg);
