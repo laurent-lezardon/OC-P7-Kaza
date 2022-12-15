@@ -1,6 +1,6 @@
-import React from "react";
+// import React, { useEffect } from "react";
 
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Kasas from "../datas/logements.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -9,31 +9,30 @@ import Collapse from "../components/Collapse";
 import HostName from "../components/HostName";
 import "../styles/Appartment.css";
 import Tags from "../components/Tags";
-import Error from "../pages/Error";
 import Carousel from "../components/Carousel";
 
 const Appartment = () => {
+  // récupération de l'id
   const appartmentId = useParams();
+  // recherche de l'objet correspondant dans la base de données
   const appartArray = Kasas.filter((k) => k.id === appartmentId.id);
-  const appartment = appartArray[0];
-  console.log(appartment);
-  /**
-   *
-   * @param {*} appartment
-   * @returns
-   */
-  const coverIndex = (appartment) => {
-    return appartment.pictures.indexOf(appartment.cover);
+  // Contrôle : l'id correspond à un et un seul appartement ?
+  const appartment = appartArray.length === 1 ? appartArray[0] : null;
+  // cherche l'index correspondant à l'image de présentation dans le tableau des images
+  const cover = (array, string) => {
+    return array.indexOf(string) === -1 ? 0 : array.indexOf(string);
   };
 
-  // console.log(coverIndex(appartment));
-  return appartArray.length === 1 ? (
+  return appartment ? (
+    // si l'appartement existe, affichage
     <div>
       <div className="main-container">
         <Header />
         <Carousel
           pictures={appartment.pictures}
-          cover="0"
+          // cover renvoi l'index de l'image de présentation dans le tableau des images
+          cover={cover(appartment.pictures, appartment.cover)}
+          // alt sert pour créer le texte alternatif des images du carousel
           alt={appartment.title}
         />
         <div className="appartment-presentation">
@@ -67,7 +66,8 @@ const Appartment = () => {
       <Footer />
     </div>
   ) : (
-    <Error />
+    // renvoi vers la page d'erreur
+    <Navigate to="/error-page" />
   );
 };
 

@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import { ReactComponent as Vector } from "../assets/images/vector-collapse.svg";
-
 import "../styles/Collapse.css";
 
+/**
+ *
+ * @param {String,String,[String]} param0
+ * @returns
+ */
 const Collapse = ({ classname, title, content }) => {
   const [visible, setVisible] = useState(true);
+  // transforme en entrée 'content' de type texte en tableau
+  if (!Array.isArray(content)) {
+    content = Array.of(content);
+  }
   return (
     <div className={classname}>
       <div className="collapse" onClick={() => setVisible(!visible)}>
