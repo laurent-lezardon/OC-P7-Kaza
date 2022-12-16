@@ -21,3 +21,17 @@
   align-self: flex-start;
   padding-top: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .disk {
+    height: 32px;
+    width: 32px;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .appartment-name p {
+    font-size: 12px;
+    align-self: flex-end;
+    padding-top: 0px;
+  }
+}

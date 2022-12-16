@@ -35,13 +35,14 @@
 @media screen and (max-width: 768px) {
   .cards {
     background-color: white;
-    padding: 56px 0;
+    padding: 22px 0;
     display: block;
   }
 
   .card {
     height: 255px;
     min-width: 100%;
+    margin-bottom: 20px;
   }
   .card a {
     height: 255px;

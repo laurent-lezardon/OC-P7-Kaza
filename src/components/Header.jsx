@@ -6,7 +6,7 @@ import "../styles/Header.css";
 const Header = ({ page }) => {
   return (
     <header>
-      <Logo />
+      <Logo className="header-logo" />
       <Navigation page={page} />
     </header>
   );

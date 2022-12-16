@@ -8,3 +8,13 @@ header {
 .header-logo {
   height: 69px;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 83px;
+  }
+  .header-logo {
+    height: 43px;
+    width: auto;
+  }
+}

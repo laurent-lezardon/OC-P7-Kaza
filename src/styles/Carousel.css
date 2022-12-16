@@ -38,3 +38,30 @@
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 255px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .arrow {
+    height: 20px;
+  }
+  .carousel-span {
+    display: none;
+  }
+  #left-arrow {
+    margin-left: 6px;
+  }
+  #right-arrow {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .carousel-image {
+    height: 100%;
+    width: auto;
+  }
+}

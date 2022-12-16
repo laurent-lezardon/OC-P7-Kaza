@@ -9,7 +9,6 @@
 
 .appartment-title h1 {
   font-size: 36px;
-  font-weight: 500;
 }
 .appartment-adds {
   display: flex;
@@ -25,6 +24,7 @@
 }
 
 /* Paramétrage du Collapse */
+/* classe envoyée dans les props : .appartment-collapse */
 
 .appartment-collapse {
   font-size: 18px;
@@ -42,14 +42,47 @@
   padding: 31px 3.4%;
 }
 
+/* fin paramètrage Collapse */
+
 @media screen and (max-width: 768px) {
   .appartment-presentation {
     display: block;
   }
+  .appartment-title h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .appartment-presentation p {
+    font-size: 14px;
+  }
+  .appartment-adds {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
   .twoCollapses {
     display: block;
   }
+  /* Paramétrage du Collapse mobile */
   .appartment-collapse {
     width: 100%;
+  }
+
+  .appartment-collapse {
+    font-size: 13px;
+    margin-top: 16px;
+    border-radius: 5px;
+  }
+
+  .appartment-collapse .collapse {
+    height: 30px;
+    padding: 3px 3.3%;
+  }
+
+  .appartment-collapse .collapse-ul {
+    padding: 17px 3.3%;
+  }
+  .appartment-collapse .collapse-li {
+    font-size: 12px;
   }
 }

@@ -17,3 +17,11 @@ nav a:last-child {
 .page-not-selected {
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}

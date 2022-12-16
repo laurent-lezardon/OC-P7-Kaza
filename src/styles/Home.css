@@ -26,3 +26,19 @@
   font-size: 48px;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 111px;
+    margin-top: 0;
+    border-radius: 10px;
+    margin-bottom: 0;
+  }
+  .banner::after {
+    border-radius: 10px;
+  }
+  .banner > p {
+    font-size: 24px;
+    margin-left: 5%;
+  }
+}

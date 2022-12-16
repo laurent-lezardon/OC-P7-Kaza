@@ -43,7 +43,32 @@
 
 /* fin paramètrage Collapse */
 @media screen and (max-width: 768px) {
+  .banner-a-propos {
+    background: url("../assets/images/apropos-banner-mobile.jpg") center/cover;
+    border-radius: 10px;
+  }
+  .banner-a-propos::after {
+    border-radius: 10px;
+  }
+
   .a-propos__collapse {
     padding: 0;
+  }
+  .a-propos__collapse:last-child {
+    margin-bottom: 20px;
+  }
+  /* Paramétrage du Collapse mobile */
+  .a-propos-collapse {
+    font-size: 13px;
+    margin-top: 19px;
+  }
+
+  .a-propos-collapse .collapse {
+    height: 30px;
+    padding: 3px 3.3%;
+  }
+
+  .a-propos-collapse .collapse-ul {
+    padding: 17px 3.3%;
   }
 }

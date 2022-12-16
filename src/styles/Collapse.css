@@ -1,13 +1,10 @@
 .collapse {
   display: flex;
-  /* height: 47px; */
   justify-content: space-between;
   align-items: center;
   color: white;
   border-radius: inherit;
-  /* padding: 3px 1.7%; */
   background-color: #f66060;
-
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -17,12 +14,10 @@
 
 .vector {
   height: 24px;
-  transition: 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .collapse-ul {
-  /* position: absolute; */
-  /* padding: 31px 1.7%; */
   background-color: #f6f6f6;
   border-radius: inherit;
 }
@@ -32,4 +27,11 @@
 .vector-up {
   transform: rotate(180deg);
   transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .vector,
+  .vector-up {
+    height: 9px;
+  }
 }

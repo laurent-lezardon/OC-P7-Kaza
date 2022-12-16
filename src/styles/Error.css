@@ -23,3 +23,23 @@
   font-size: 18px;
   margin-bottom: 5vw;
 }
+
+@media screen and (max-width: 768px) {
+  .error {
+    height: calc(100vh - 83px);
+  }
+
+  .error h1 {
+    font-size: 25.6vw;
+  }
+
+  .error p {
+    margin-top: 20px;
+    margin-bottom: 130px;
+    font-size: 18px;
+  }
+
+  .error a {
+    font-size: 14px;
+  }
+}
