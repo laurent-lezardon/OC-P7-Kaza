@@ -10,6 +10,7 @@ const Cards = () => {
       {Kasas.map((kaza, index) => (
         <Link to={`/appartment/${kaza.id}`} key={kaza.id}>
           <li className="card" key={kaza.id}>
+            <img src={kaza.cover} alt={kaza.title} />
             <span>{kaza.title}</span>
           </li>
         </Link>

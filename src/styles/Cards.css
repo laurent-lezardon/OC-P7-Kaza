@@ -10,6 +10,8 @@
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -23,13 +25,33 @@
   color: white;
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(246, 96, 96, 1) 0%, #803030 100%);
-  padding: 20px;
+
   margin-bottom: 50px;
   transition: transform 0.3s ease-out;
 }
 
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
 .card:hover {
   transform: scale(1.01);
+}
+
+@media screen and (min-width: 2000px) {
+  .card {
+    height: 17vw;
+    width: 17vw;
+    max-width: none;
+    max-height: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
