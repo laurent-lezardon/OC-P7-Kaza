@@ -14,13 +14,13 @@
 }
 
 #left-arrow {
-  margin-left: 20px;
+  margin-left: 23px;
   transform: translateY(-50%);
 }
 #right-arrow {
   right: 0;
   transform: rotate(180deg) translateY(+50%);
-  margin-right: 20px;
+  margin-right: 23px;
 }
 .carousel-span {
   color: white;

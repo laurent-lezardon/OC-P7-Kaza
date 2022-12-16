@@ -24,11 +24,22 @@
   margin-bottom: 14px;
 }
 
+/* Paramétrage du Collapse */
+
 .appartment-collapse {
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 47%;
   margin-top: 24px;
+}
+
+.appartment-collapse .collapse {
+  height: 52px;
+  padding: 3px 3.4%;
+}
+
+.appartment-collapse .collapse-ul {
+  padding: 31px 3.4%;
 }
 
 @media screen and (max-width: 768px) {

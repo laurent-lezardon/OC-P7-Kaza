@@ -1,7 +1,6 @@
 .cards {
   list-style: none;
   display: flex;
-
   border-radius: 25px;
   background-color: #f6f6f6;
   padding: 56px 4%;
@@ -42,7 +41,7 @@
 
   .card {
     height: 255px;
-    width: 100%;
+    min-width: 100%;
   }
   .card a {
     height: 255px;

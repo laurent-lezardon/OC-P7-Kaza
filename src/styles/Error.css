@@ -2,20 +2,24 @@
   text-align: center;
   color: #f66060;
   height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .error h1 {
-  font-size: 28.8vw;
-  margin-top: 150px;
+  font-size: 20vw;
 }
 
 .error p {
-  margin-top: 66px;
+  margin-top: 30px;
   margin-bottom: 180px;
   font-size: 36px;
 }
 
 .error a {
+  display: inline-block;
   color: #f66060;
   font-size: 18px;
+  margin-bottom: 5vw;
 }

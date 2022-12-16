@@ -1,11 +1,11 @@
 .collapse {
   display: flex;
-  height: 47px;
+  /* height: 47px; */
   justify-content: space-between;
   align-items: center;
   color: white;
   border-radius: inherit;
-  padding: 3px 1.7%;
+  /* padding: 3px 1.7%; */
   background-color: #f66060;
 
   cursor: pointer;
@@ -21,7 +21,8 @@
 }
 
 .collapse-ul {
-  padding: 31px 1.7%;
+  /* position: absolute; */
+  /* padding: 31px 1.7%; */
   background-color: #f6f6f6;
   border-radius: inherit;
 }
