@@ -16,4 +16,4 @@ Démarrer un projet React et développer l’ensemble de l’application, les co
 
 - récupérer l'archive
 - installer les dépendances en utilisant la comande "yarn" (ou npm install)
-- démarrer l'application "yarn start"
+- démarrer l'application "yarn start" (ou npm run start)
