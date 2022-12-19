@@ -1,41 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+// Style du composant
 import "../styles/Carousel.css";
 import arrow from "../assets/images/left-arrow.png";
 
 /**
  * Composant Carousel
  * @param {[String],String}
- * picture:tableau des sources des images
- * cover : string contenant l'index de picture pour l'image par défaut
- * @returns HTMLElement
+ * picture: tableau contenant les adresses images
+ * alt : string servant de base au texte alternatif des images
+ * @returns {HTMLElement}
  */
-const Carousel = ({ pictures, cover, alt }) => {
+const Carousel = ({ pictures, alt }) => {
   // index de l'image à afficher
-  const [activePicture, setActivePicture] = useState(parseInt(cover));
-  const [widthPicture, setWidthPicture] = useState(0);
+  const [activePicture, setActivePicture] = useState(parseInt(0));
   const numberOfPictures = pictures.length;
-  const resizeImage = (e) => {
-    // console.log(e);
-    let originalWidth = e.target.naturalWidth;
-    let originalHeight = e.target.naturalHeight;
-    let carouselHeight = e.target.clientHeight;
-    console.log(
-      "originalHeight",
-      originalHeight,
-      "originalWidth",
-      originalWidth,
-      "carouselHeight",
-      carouselHeight
-    );
-  };
-
-  // fonctions de modification de l'index de l'image affichée
+  // fonctions de modification de l'index de l'image affichée (next et previous)
   const nextImage = () =>
     setActivePicture((activePicture + 1) % numberOfPictures);
   const previousImage = () =>
     setActivePicture((activePicture + numberOfPictures - 1) % numberOfPictures);
-
-  const widthTest = "100px";
 
   return (
     <div className="carousel">
@@ -54,8 +37,6 @@ const Carousel = ({ pictures, cover, alt }) => {
         onClick={nextImage}
       />
       <img
-        onLoad={resizeImage}
-        // style={{ width: widthTest }}
         className="carousel-image"
         src={pictures[activePicture]}
         alt={`${alt} numéro ${activePicture + 1}`}
@@ -68,3 +49,24 @@ const Carousel = ({ pictures, cover, alt }) => {
 };
 
 export default Carousel;
+
+/* Paramétrage du Collapse ****************************/
+/* classe envoyée dans les props : .exemple-collapse */
+
+// Parmètres généraux -------------------------------
+// .exemple-collapse {
+//   font-size: 18px;
+//   border-radius: 10px;
+//   width: 47%;
+//   margin-top: 24px;
+// }
+// Hauteur et padding du collapse -------------------
+// .exemple-collapse .collapse {
+//   height: 52px;
+//   padding: 3px 3.4%;
+// }
+//
+// padding du content --------------------------------
+// .exemple .collapse-ul {
+//   padding: 31px 3.4%;
+// }

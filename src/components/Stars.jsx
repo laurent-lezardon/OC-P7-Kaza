@@ -1,8 +1,14 @@
 import React from "react";
 import { ReactComponent as EmptyStar } from "../assets/images/emptyStar.svg";
 import { ReactComponent as FullStar } from "../assets/images/fullStar.svg";
+// Style du composant
 import "../styles/Stars.css";
 
+/**
+ * Création de la note sous forme d'étoiles
+ * @param {String} rating nombre d'étoiles sur cinq attribuée au logement
+ * @returns {HTMLElement} cinq étoiles plines ou vides selon la note
+ */
 const Stars = ({ rating }) => {
   console.log(rating);
 

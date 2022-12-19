@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// Style du composant
 import "../styles/Navigation.css";
 
+/**
+ * Création de la navigation
+ * @param {String} page  permet de personnaliser le lien de la page en cours
+ * @returns {HTMLElement}
+ */
 const Navigation = ({ page }) => {
   console.log("page", page);
   return (

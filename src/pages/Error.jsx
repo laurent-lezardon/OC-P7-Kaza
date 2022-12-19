@@ -1,4 +1,5 @@
 import React from "react";
+// Style de la page
 import "../styles/Error.css";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";

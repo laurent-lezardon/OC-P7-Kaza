@@ -1,5 +1,14 @@
 import React from "react";
+// Style du composant
 import "../styles/HostName.css";
+
+/**
+ * Crée une vignette prénom, nom photo
+ * @param {String, String} name, picture
+ * name : prénom nom
+ * picture : chemin du fichier de la photo
+ * @returns
+ */
 const HostName = ({ name, picture }) => {
   return (
     <div className="appartment-hostname">

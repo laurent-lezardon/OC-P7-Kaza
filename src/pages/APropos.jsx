@@ -1,10 +1,13 @@
 import React from "react";
+// import des composants
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../styles/APropos.css";
 import Collapse from "../components/Collapse";
+// Style de la page
+import "../styles/APropos.css";
 
 const APropos = () => {
+  // Contenus a afficher
   const fiabiliteText =
     "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.";
   const respectTxt =

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { ReactComponent as Vector } from "../assets/images/vector-collapse.svg";
+// style du composant
 import "../styles/Collapse.css";
 
 /**
  *
  * @param {String,String,[String]} param0
- * @returns
+ * classname : classe reçue et gérée (css) par le composant parent permettant la personnalisation
+ * title : intiutlé apparaissant sur le collapse
+ * content : contenus à afficher lorsque le collapse est ouvert
+ * @returns {HTMLElement}
  */
 const Collapse = ({ classname, title, content }) => {
   const [visible, setVisible] = useState(false);
@@ -37,3 +41,24 @@ const Collapse = ({ classname, title, content }) => {
 };
 
 export default Collapse;
+
+/* Paramétrage du Collapse ****************************/
+/* classe envoyée dans les props : .exemple-collapse */
+
+// Parmètres généraux -------------------------------
+// .exemple-collapse {
+//   font-size: 18px;
+//   border-radius: 10px;
+//   width: 47%;
+//   margin-top: 24px;
+// }
+// Hauteur et padding du collapse -------------------
+// .exemple-collapse .collapse {
+//   height: 52px;
+//   padding: 3px 3.4%;
+// }
+//
+// padding du content --------------------------------
+// .exemple .collapse-ul {
+//   padding: 31px 3.4%;
+// }
