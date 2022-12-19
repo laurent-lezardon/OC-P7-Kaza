@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Appartment from "../pages/Appartment";
 import APropos from "../pages/APropos";
@@ -14,8 +14,8 @@ const Router = () => {
       <Route path="/appartment/:id" element={<Appartment />} />
       {/* route pour le renvoi vers la page d'erreur */}
       <Route path="/error-page" element={<Error />} />
-      {/* route par défaut */}
-      <Route path="*" element={<Error />} />
+      {/* autres routes renvoi vers page d'erreur*/}
+      <Route path="*" element={<Navigate to="/error-page" />} />
     </Routes>
   );
 };

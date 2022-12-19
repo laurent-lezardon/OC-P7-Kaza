@@ -13,15 +13,26 @@
   transition: all 0.3s ease-out;
 }
 
+.hidden {
+  display: none;
+}
 #left-arrow {
   margin-left: 23px;
   transform: translateY(-50%);
+}
+
+#left-arrow:hover {
+  transform: translateY(-50%) scale(1.2);
 }
 #right-arrow {
   right: 0;
   transform: rotate(180deg) translateY(+50%);
   margin-right: 23px;
 }
+#right-arrow:hover {
+  transform: rotate(180deg) translateY(+50%) scale(1.2);
+}
+
 .carousel-span {
   color: white;
   display: block;
@@ -31,7 +42,9 @@
   transform: translateX(-50%);
 }
 .carousel-image {
+  min-height: 415px;
   width: 100%;
+  object-fit: cover;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,11 +70,7 @@
   #right-arrow {
     margin-right: 6px;
   }
-}
-
-@media screen and (max-width: 420px) {
   .carousel-image {
-    height: 100%;
-    width: auto;
+    min-height: 255px;
   }
 }

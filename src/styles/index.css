@@ -36,8 +36,19 @@ a {
   overflow: hidden;
 }
 
+.display-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
   .main-container {
     padding: 0 5.3%;
+  }
+  .display-footer {
+    height: unset;
+    display: block;
   }
 }

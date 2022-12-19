@@ -24,10 +24,10 @@
   font-size: 18px;
   color: white;
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(246, 96, 96, 1) 0%, #803030 100%);
+  /* background: linear-gradient(180deg, rgba(246, 96, 96, 1) 0%, #803030 100%); */
 
   margin-bottom: 50px;
-  transition: transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
 }
 
 .card img {
@@ -42,7 +42,7 @@
 }
 
 .card:hover {
-  transform: scale(1.01);
+  box-shadow: grey 5px 5px 10px;
 }
 
 @media screen and (min-width: 2000px) {

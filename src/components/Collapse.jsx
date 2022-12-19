@@ -8,14 +8,18 @@ import "../styles/Collapse.css";
  * @returns
  */
 const Collapse = ({ classname, title, content }) => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   // transforme en entrée 'content' de type texte en tableau
   if (!Array.isArray(content)) {
     content = Array.of(content);
   }
   return (
     <div className={classname}>
-      <div className="collapse" onClick={() => setVisible(!visible)}>
+      <div
+        className="collapse"
+        id={visible ? "collapse-visible" : null}
+        onClick={() => setVisible(!visible)}
+      >
         <span>{title}</span>
         <Vector className={visible ? "vector-up" : "vector"} />
       </div>

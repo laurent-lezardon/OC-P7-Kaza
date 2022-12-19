@@ -1,3 +1,10 @@
+/* .display-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
 .banner-a-propos {
   position: relative;
   height: 223px;
@@ -16,11 +23,12 @@
   border-radius: 25px;
 }
 .a-propos__collapse {
+  position: relative;
   padding: 0 8.75%;
 }
 
 .a-propos__collapse:last-child {
-  margin-bottom: 201px;
+  margin-bottom: 20px;
 }
 
 /* Paramétrage du Collapse */
@@ -71,4 +79,8 @@
   .a-propos-collapse .collapse-ul {
     padding: 17px 3.3%;
   }
+  /* .display-footer {
+    height: unset;
+    display: block;
+  } */
 }

@@ -1,10 +1,10 @@
-![logo du site](./src/assets/images/LOGO.png) ![logo du site](./public/logo192.png)
+![logo du site](./public/logo192.png)![logo Kaza](./src/assets/images/LOGO.png)
 
 # OC-P7-Kaza
 
 # Présentation du projet 7
 
-Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !)
+Démarrer un projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !)
 
 # Compétences évaluées
 

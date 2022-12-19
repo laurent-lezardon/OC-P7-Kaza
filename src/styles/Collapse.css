@@ -9,7 +9,12 @@
   transition: all 0.3s ease-in-out;
 }
 .collapse:hover {
-  transform: scale(1.01);
+  background-color: #c73131;
+}
+
+#collapse-visible {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .vector {
@@ -20,6 +25,8 @@
 .collapse-ul {
   background-color: #f6f6f6;
   border-radius: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .collapse-li {
   font-weight: 400;

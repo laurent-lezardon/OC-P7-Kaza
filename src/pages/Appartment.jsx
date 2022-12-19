@@ -25,7 +25,7 @@ const Appartment = () => {
 
   return appartment ? (
     // si l'appartement existe, affichage
-    <div>
+    <div className="display-footer">
       <div className="main-container">
         <Header />
         <Carousel

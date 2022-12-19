@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Carousel.css";
 import arrow from "../assets/images/left-arrow.png";
 
@@ -12,7 +12,22 @@ import arrow from "../assets/images/left-arrow.png";
 const Carousel = ({ pictures, cover, alt }) => {
   // index de l'image à afficher
   const [activePicture, setActivePicture] = useState(parseInt(cover));
+  const [widthPicture, setWidthPicture] = useState(0);
   const numberOfPictures = pictures.length;
+  const resizeImage = (e) => {
+    // console.log(e);
+    let originalWidth = e.target.naturalWidth;
+    let originalHeight = e.target.naturalHeight;
+    let carouselHeight = e.target.clientHeight;
+    console.log(
+      "originalHeight",
+      originalHeight,
+      "originalWidth",
+      originalWidth,
+      "carouselHeight",
+      carouselHeight
+    );
+  };
 
   // fonctions de modification de l'index de l'image affichée
   const nextImage = () =>
@@ -20,23 +35,27 @@ const Carousel = ({ pictures, cover, alt }) => {
   const previousImage = () =>
     setActivePicture((activePicture + numberOfPictures - 1) % numberOfPictures);
 
+  const widthTest = "100px";
+
   return (
     <div className="carousel">
       <img
         src={arrow}
         alt="carousel flêche gauche"
-        className="arrow"
+        className={numberOfPictures === 1 ? "hidden" : "arrow"}
         id="left-arrow"
         onClick={previousImage}
       />
       <img
         src={arrow}
         alt="carousel flêche droite"
-        className="arrow"
+        className={numberOfPictures === 1 ? "hidden" : "arrow"}
         id="right-arrow"
         onClick={nextImage}
       />
       <img
+        onLoad={resizeImage}
+        // style={{ width: widthTest }}
         className="carousel-image"
         src={pictures[activePicture]}
         alt={`${alt} numéro ${activePicture + 1}`}
