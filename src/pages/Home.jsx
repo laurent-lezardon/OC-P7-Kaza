@@ -15,7 +15,7 @@ function Home() {
       <div className="main-container">
         <Header page="home" />
         <div className="banner">
-          <p>Chez vous,partout et ailleurs</p>
+          <p>Chez vous, partout et ailleurs</p>
         </div>
         <Cards />
       </div>
