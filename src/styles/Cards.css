@@ -15,27 +15,29 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 23.6vw;
-  width: 23.6vw;
-  max-width: 340px;
-  max-height: 340px;
-  min-width: 255px;
-  min-height: 255px;
+  height: 340px;
+  width: 340px;
   font-size: 18px;
   color: white;
   border-radius: 10px;
-  /* background: linear-gradient(180deg, rgba(246, 96, 96, 1) 0%, #803030 100%); */
-
   margin-bottom: 50px;
   transition: box-shadow 0.3s ease-out;
 }
 
-.card img {
-  height: 100%;
-  object-fit: cover;
+.card a {
+  display: block;
+  height: inherit;
 }
 
+.card img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .card span {
+  color: white;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -62,12 +64,14 @@
   }
 
   .card {
+    /* min-height: none; */
     height: 255px;
     min-width: 100%;
     margin-bottom: 20px;
+    width: inherit;
   }
-  .card a {
-    height: 255px;
+  .card img {
     width: 100%;
+    object-fit: cover;
   }
 }

@@ -14,12 +14,12 @@ const Cards = () => {
   return (
     <ul className="cards">
       {Kasas.map((kaza, index) => (
-        <Link to={`/appartment/${kaza.id}`} key={kaza.id}>
-          <li className="card" key={kaza.id}>
+        <li className="card" key={kaza.id}>
+          <Link to={`/appartment/${kaza.id}`} key={kaza.id}>
             <img src={kaza.cover} alt={kaza.title} />
             <span>{kaza.title}</span>
-          </li>
-        </Link>
+          </Link>
+        </li>
       ))}
     </ul>
   );
